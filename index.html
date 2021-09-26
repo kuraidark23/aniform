@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani Form</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <!-- MultiStep Form -->
+    <div class="container-fluid" id="grad1">
+        <div class="row justify-content-center mt-0">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2><strong>Ani Form</strong></h2>
+                    <div class="row">
+                        <div class="col-md-12 mx-0">
+                            <form id="msform">
+                                <!-- progressbar -->
+                                <ul id="progressbar">
+                                    <li class="active" id="account"><strong>Nombre</strong></li>
+                                    <li id="personal"><strong>Telefono</strong></li>
+                                    <li id="payment"><strong>Email</strong></li>
+                                    <li id="confirm"><strong>Finalizar</strong></li>
+                                </ul> <!-- fieldsets -->
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">Nombre Completo</h2>
+                                        <input type="text" name="name" placeholder="Ej. Jose Luis Parra Vizcaino" />
+                                    </div> <input type="button" name="next" class="next action-button"
+                                        value="Siguiente" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">Telefono</h2>
+                                        <input type="tel" name="phone" placeholder="849-356-22-44" required
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                                        <span class="validity"></span>
+
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Anterior" /> <input type="button" name="next" class="next action-button"
+                                        value="Siguiente" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">Email</h2>
+                                        <div class="radio-group">
+                                            <input type="email" name="email" placeholder="nombre@correo.com">
+                                        </div>
+                                    </div>
+                                    <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Anterior" /> <input type="button" name="make_payment"
+                                        class="next action-button" value="Finalizar" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title text-center">Exito!</h2> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-3"> <img
+                                                    src="https://img.icons8.com/color/96/000000/ok--v2.png"
+                                                    class="fit-image"> </div>
+                                        </div> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-7 text-center">
+                                                <h5>Ha completado el formulario con exito!</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center><a href="http://www.geoplugin.com/geolocation/" target="_new">IP Geolocation</a> by <a href="http://www.geoplugin.com/" target="_new">geoPlugin</a>
+    </center>
+    <!-- Script -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js	"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/main.js"></script>
+</body>
+
+</html>
